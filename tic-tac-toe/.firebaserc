@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tic-tac-toe-8c37b"
+  },
+  "targets": {
+    "tic-tac-toe-8c37b": {
+      "hosting": {
+        "tic-tac-toe": [
+          "tic-tac-toe-8c37b"
+        ]
+      }
+    }
+  }
+}
