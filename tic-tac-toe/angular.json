@@ -117,9 +117,21 @@
             "firebaseProject": "tic-tac-toe-8c37b",
             "firebaseHostingSite": "tic-tac-toe-8c37b"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "tic-tac-toe"
+  "defaultProject": "tic-tac-toe",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

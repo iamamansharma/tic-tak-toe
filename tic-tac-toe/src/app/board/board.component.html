@@ -1,8 +1,11 @@
 <h1>Current Player: {{player}}</h1>
 
-<button nbButton status="danger" outline (click)="newGame()">Start New Game</button>
+<button nbButton status="danger" outline (click)="newGame()">Start New Match</button>
 
 <h2 *ngIf="winner">Player {{ winner }} Wins!</h2>
+<div *ngIf="!winner">
+    <h2 *ngIf="isDraw">Match Draw! Restart new match.</h2>
+</div>
 
 <main>
     <app-square
